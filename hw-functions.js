@@ -55,7 +55,7 @@ function priceCheckSecond (price) {
     else console.log("Ціна в диапазоні")
 }
 
-priceCheckFirst(1000);
+priceCheckSecond(1000);
 
 /*
 4.  За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if
