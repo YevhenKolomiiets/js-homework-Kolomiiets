@@ -188,13 +188,12 @@ console.log(final)
     Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
 */
 
-let meter = 10101000;
+let meter = 21010;
 let kilo = meter / 1000;
 let meterName = 'метр';
 let kiloName = 'кілометр'
 let meterMessage;
 let kiloMessage;
-console.log ((meter / 1000) % 10)
 
 if (!Number.isInteger(kilo)) {
     kiloMessage = `${kilo} ${kiloName}а`
@@ -213,16 +212,15 @@ if (!Number.isInteger(kilo)) {
     }
 }
 else if (Number.isInteger(kilo)) {
-    if ((meter / 1000) % 10 == 1 && (meter / 1000) % 100 != 11)
+    if ((kilo) % 10 == 1 && (kilo) % 100 != 11)
     {
         console.log(`${meter} ${meterName}ів це ${kilo} ${kiloName}`)
     }
-    else if ((meter / 1000) % 10 >= 2 && (meter / 1000) % 10 <= 4)
+    else if ((kilo) % 10 >= 2 && (kilo) % 10 <= 4)
     {
        console.log(`${meter} ${meterName}ів це ${kilo} ${kiloName}и`)
     }
-    else if ((meter / 1000) % 10 >= 5 || (meter / 1000) % 10 >= 11 && meter % 100 <= 19 || (meter / 1000) % 10 == 0) {
+    else if ((kilo) % 10 >= 5 || (kilo) % 100 >= 11 && kilo % 100 <= 19 || (kilo) % 10 == 0) {
         console.log(meterMessage = `${meter} ${meterName}ів це ${kilo} ${kiloName}ів`)
     }
 }
-
